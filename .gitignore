@@ -1,0 +1,63 @@
+# ==========================================
+# SECRETS & ENVIRONMENT VARIABLES (CRITICAL)
+# ==========================================
+# Ignore all .env files to prevent leaking API keys
+.env
+.env.local
+.env.development
+.env.production
+backend/.env
+*.env
+
+# ==========================================
+# BACKEND (PYTHON)
+# ==========================================
+# Virtual environments
+backend/venv/
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# ==========================================
+# FRONTEND (NODE.JS / NEXT.JS)
+# ==========================================
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js build outputs
+.next/
+out/
+build/
+dist/
+
+# ==========================================
+# SYSTEM & EDITOR FILES
+# ==========================================
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code settings (optional)
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================================
+# DATABASE (Local DB files if any)
+# ==========================================
+*.sqlite
+*.sqlite3
+*.db
